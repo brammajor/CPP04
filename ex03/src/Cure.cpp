@@ -6,20 +6,18 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 16:08:02 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 14:09:54 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/05 15:30:52 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/AMateria.hpp"
+#include "../inc/Cure.hpp"
 
 Cure::Cure() : AMateria("cure")
 {
-    std::cout << "Cure constructed." << std::endl;
 }
 
 Cure::Cure(const Cure &ref)
 {
-    std::cout << "Cure copied." << std::endl;
     *this = ref;
 }
 
@@ -32,7 +30,6 @@ Cure &Cure::operator=(const Cure &ref)
 
 Cure::~Cure()
 {
-    std::cout << "Cure destroyed." << std::endl;
 }
 
 AMateria *Cure::clone() const

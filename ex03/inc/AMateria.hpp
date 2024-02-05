@@ -6,7 +6,7 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 15:45:13 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 14:38:07 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/05 15:19:38 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,6 @@
 #include <iostream>
 #include <string>
 #include "ICharacter.hpp"
-#include "Character.hpp"
-#include "Ice.hpp"
-#include "Cure.hpp"
-#include "IMateriaSource.hpp"
-#include "MateriaSource.hpp"
 
 class ICharacter;
 

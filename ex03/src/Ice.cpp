@@ -6,20 +6,18 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 15:59:44 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 14:10:51 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/05 15:31:08 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "../inc/AMateria.hpp"
+#include "../inc/Ice.hpp"
 
 Ice::Ice() : AMateria("ice")
 {
-    std::cout << "Ice constructed." << std::endl;
 }
 
 Ice::Ice(const Ice &ref)
 {
-    std::cout << "Ice copied." << std::endl;
     *this = ref;
 }
 
@@ -32,7 +30,6 @@ Ice &Ice::operator=(const Ice &ref)
 
 Ice::~Ice()
 {
-    std::cout << "Ice destroyed." << std::endl;
 }
 
 AMateria *Ice::clone() const

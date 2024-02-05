@@ -6,7 +6,7 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 15:49:30 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/02 16:06:10 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/05 15:19:04 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 # define ICHARACTER_HPP
 
 #include "AMateria.hpp"
+
+class   AMateria;
 
 class ICharacter
 {

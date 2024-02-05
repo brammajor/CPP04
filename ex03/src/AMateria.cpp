@@ -6,7 +6,7 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 15:45:03 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 13:01:03 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/05 15:30:26 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,17 +14,14 @@
 
 AMateria::AMateria(): _type("default")
 {
-    std::cout << "AMateria constructed." << std::endl;
 }
 
 AMateria::AMateria(std::string const &type): _type(type)
 {
-    std::cout << "AMateria constructed." << std::endl;
 }
 
 AMateria::AMateria(const AMateria &ref)
 {
-    std::cout << "AMateria copy constructed." << std::endl;
     *this = ref;
 }
 
@@ -37,7 +34,6 @@ AMateria &AMateria::operator=(const AMateria &ref)
 
 AMateria::~AMateria()
 {
-    std::cout << "AMateria destroyed." << std::endl;
 }
 
 std::string const &AMateria::getType() const
@@ -47,6 +43,6 @@ std::string const &AMateria::getType() const
 
 void AMateria::use(ICharacter &target)
 {
-    std::cout << "" << std::endl;
+    std::cout << "" << target.getName() << std::endl;
 }
 
