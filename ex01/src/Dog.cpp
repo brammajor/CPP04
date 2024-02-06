@@ -6,7 +6,7 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 11:28:08 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 12:25:45 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/06 12:03:46 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@ Dog::Dog(): Animal()
     std::cout << "Dog constructed." << std::endl;
 }
 
-Dog::Dog(const Dog &ref)
+Dog::Dog(const Dog &ref): Animal(ref)
 {
     std::cout << "Dog copied with new brain." << std::endl;
-    *this = ref;
     this->brain = new Brain();
 }
 

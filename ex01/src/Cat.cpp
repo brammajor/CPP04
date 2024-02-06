@@ -6,7 +6,7 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 11:29:31 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 12:26:58 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/06 12:07:00 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,10 +19,9 @@ Cat::Cat(): Animal()
     std::cout << "Cat constructed." << std::endl;
 }
 
-Cat::Cat(const Cat &ref)
+Cat::Cat(const Cat &ref) :  Animal(ref)
 {
     std::cout << "Cat copied with new brain." << std::endl;
-    *this = ref;
     this->brain = new Brain();
 }
 

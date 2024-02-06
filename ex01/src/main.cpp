@@ -6,7 +6,7 @@
 /*   By: brmajor <brmajor@student.42.fr>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/02/02 11:06:01 by brmajor           #+#    #+#             */
-/*   Updated: 2024/02/05 12:29:15 by brmajor          ###   ########.fr       */
+/*   Updated: 2024/02/06 12:08:01 by brmajor          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,6 +30,14 @@ int main()
         std::cout << i << std::endl;
         delete animals[i];
     }
+
+    Dog* dogA = new Dog();
+    Dog* dogB = new Dog(*dogA);
+
+    //*dogA = *dogB;
+    
+    delete dogA;
+    delete dogB;
 
     return 0;
 }
